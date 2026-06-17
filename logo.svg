@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="星脈智能 NOVA SYNAPSE 標誌">
+  <defs>
+    <linearGradient id="ns-g" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2de2e6"/>
+      <stop offset="0.55" stop-color="#7b5cff"/>
+      <stop offset="1" stop-color="#f637ec"/>
+    </linearGradient>
+  </defs>
+  <path d="M24 4 L31 17 L44 24 L31 31 L24 44 L17 31 L4 24 L17 17 Z" stroke="url(#ns-g)" stroke-width="2.2" stroke-linejoin="round" opacity="0.55"/>
+  <circle cx="24" cy="24" r="5.4" fill="url(#ns-g)"/>
+  <circle cx="24" cy="24" r="9.5" stroke="url(#ns-g)" stroke-width="1.6" opacity="0.7"/>
+  <circle cx="44" cy="24" r="2.2" fill="#2de2e6"/>
+  <circle cx="4" cy="24" r="2.2" fill="#f637ec"/>
+  <circle cx="24" cy="4" r="2.2" fill="#2de2e6"/>
+  <circle cx="24" cy="44" r="2.2" fill="#f637ec"/>
+</svg>
