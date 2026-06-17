@@ -20,7 +20,15 @@
       if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
     });
   }, { threshold: 0.12 });
-  document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+  var reveals = document.querySelectorAll(".reveal");
+  reveals.forEach(function (el) { io.observe(el); });
+  // Failsafe: never leave content hidden if the observer doesn't fire
+  // (e.g. observer unsupported, or tab restored from a frozen background state).
+  function revealAll() { reveals.forEach(function (el) { el.classList.add("in"); }); }
+  setTimeout(revealAll, 1600);
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) revealAll();
+  });
 
   // ---- Contact form (no backend; graceful UX) ----
   var form = document.getElementById("contact-form");
